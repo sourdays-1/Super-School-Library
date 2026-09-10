@@ -16,6 +16,9 @@
     background-color: black;
     color: rgb(0, 255, 0);
     font-family: 'Kiwi Soda';
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 }
 
 /* body {
