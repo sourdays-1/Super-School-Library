@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super School Library | Gameplayer</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div class="logo">
+                <h1 style="font-size: 50px;">SUPER SCHOOL LIBRARY</h1>
+            </div>
+            <hr>
+            <div class="gameSection">
+                <iframe id="gameplayer" src="../loading.html" frameborder="3px"></iframe>
+            </div>
+            <div class="gameButtons">
+                <button onclick="window.location.href='../index.html'">Home</button>
+                <button id="fullscreen">Fullscreen</button>
+            </div>
+            <hr>
+        </div>
+    </center>
+    <script>
+        let params = new URLSearchParams(document.location.search);
+        let title = params.get("game");
+        let id = params.get('id');
+        console.log(name, id);
+        document.title = "Super School Library | "+title;
+
+        let iframe = document.getElementById("gameplayer")
+        iframe.src = "../games/"+id+"/index.html"
+
+        let fullscreen = document.getElementById("fullscreen")
+
+        fullscreen.addEventListener("click", () => {
+            iframe.requestFullscreen();
+        })
+    </script>
+</body>
+</html>
