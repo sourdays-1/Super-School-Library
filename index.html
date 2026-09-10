@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <title>Super School Library</title>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="logo">
+                <h1>SUPER SCHOOL LIBRARY</h1>
+            </div>
+            <hr>
+            <div class="gamePage">
+                <details open class="section">
+                    <summary>PC Games</summary>
+                    <a href="gameplayer/index.html?game=Sandboxels&id=1" class="game"><img
+                            src="games/1/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=Eaglercraft 1.8&id=2" class="game"><img
+                            src="games/2/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=Eaglercraft 1.12.2&id=3" class="game"><img
+                            src="games/3/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaF 1&id=4" class="game"><img src="games/4/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaF 2&id=5" class="game"><img src="games/5/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaF 3&id=6" class="game"><img src="games/6/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaF 4&id=7" class="game"><img src="games/7/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaFSL&id=9" class="game"><img src="games/9/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaFPS&id=8" class="game"><img src="games/8/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaFUCNL&id=10" class="game"><img
+                            src="games/10/thumbnail.png"></a>
+                    <a href="gameplayer/index.html?game=FNaFW&id=11" class="game"><img src="games/11/thumbnail.png"></a>
+                </details>
+            </div>
+            <hr>
+            <footer>
+                <div class="credits">
+                    <h3>Credits</h3>
+                    <div class="credit">
+                        <strong>Sandboxels</strong>
+                        <span>Created by R74n</span>
+                        <a href="https://r74n.com/">Official website</a>
+                    </div>
+
+                    <div class="credit">
+                        <strong>Eaglercraft</strong>
+                        <span>Browser-based Minecraft-compatible project</span>
+                        <a href="https://eaglercraft.com/">Project website</a>
+                    </div>
+
+                    <div class="credit">
+                        <strong>Five Nights at Freddy's</strong>
+                        <span>Original game created by Scott Cawthon</span>
+                        <span>Web port: [port creator]</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </center>
+    <div id="alert" class="alert-box">
+        <div class="alert-content">
+            <h2>WARNING!</h2>
+            <p>For educational/entertainment purposes. Please follow your school's rules and only use this site when
+                permitted. I am not affiliated with or endorsed by the creators of the games hosted here.</p>
+            <button id="confirmBtn">OK</button>
+        </div>
+    </div>
+
+    <script>
+        const customAlert = document.getElementById('alert');
+        const confirmBtn = document.getElementById('confirmBtn');
+
+        confirmBtn.addEventListener('click', function () {
+            customAlert.style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>
